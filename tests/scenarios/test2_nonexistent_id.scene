@@ -1,0 +1,30 @@
+open 5 Bob,fbd
+open 1
+open 1 Bob,fbd
+status 10
+status 1
+order 10
+order 2
+order 1
+status 1
+closeall
+
+*****
+
+Studio is now open!
+Error: Trainer does not exist or is not open
+Trainer 1 status: open
+Error: Trainer does not exist or is not open
+Error: Trainer does not exist or is not open
+Bob Is Doing Rope Jumps
+Bob Is Doing CrossFit
+Bob Is Doing Yoga
+Trainer 1 status: open
+Customers:
+0 Bob
+Orders:
+Rope Jumps 70NIS 0
+CrossFit 140NIS 0
+Yoga 90NIS 0
+Current Trainer's Salary: 300NIS
+Trainer 1 closed. Salary 300NIS

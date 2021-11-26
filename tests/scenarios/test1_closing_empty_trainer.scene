@@ -1,0 +1,23 @@
+open 1 Alice,mcl Alice,mcl
+open 2 Bob,fbd
+order 2
+order 1
+move 1 2 0
+move 1 2 1
+close 1
+close 2
+closeall
+
+*****
+
+Studio is now open!
+Bob Is Doing Rope Jumps
+Bob Is Doing CrossFit
+Bob Is Doing Yoga
+Alice Is Doing Pilates
+Alice Is Doing Yoga
+Alice Is Doing Pilates
+Alice Is Doing Yoga
+Trainer 1 closed.
+Error: Trainer does not exist or is not open
+Trainer 2 closed. Salary 700NIS

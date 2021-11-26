@@ -1,0 +1,56 @@
+open 2 Shalom,swt Dan,chp Alice,mcl Bob,fbd
+order 2
+close 2
+open 3 Alice,chp Bob,mcl
+order 3
+status 3
+status 2
+open 0 Shuli,chp
+order 0
+status 0
+move 3 0 5
+status 3
+open 3 Dan,chp Ban,mcl
+closeall
+
+*****
+
+Studio is now open!
+Shalom Is Doing Zumba
+Shalom Is Doing Rope Jumps
+Dan Is Doing Rope Jumps
+Alice Is Doing Pilates
+Alice Is Doing Yoga
+Bob Is Doing Rope Jumps
+Bob Is Doing CrossFit
+Bob Is Doing Yoga
+Trainer 2 closed. Salary 740NIS
+Alice Is Doing Rope Jumps
+Bob Is Doing Pilates
+Bob Is Doing Yoga
+Trainer 3 status: open
+Customers:
+4 Alice
+5 Bob
+Orders:
+Rope Jumps 70NIS 4
+Pilates 110NIS 5
+Yoga 90NIS 5
+Current Trainer's Salary: 270NIS
+Trainer 2 status: closed
+Shuli Is Doing Rope Jumps
+Trainer 0 status: open
+Customers:
+6 Shuli
+Orders:
+Rope Jumps 70NIS 6
+Current Trainer's Salary: 70NIS
+Trainer 3 status: open
+Customers:
+4 Alice
+Orders:
+Rope Jumps 70NIS 4
+Current Trainer's Salary: 70NIS
+Error: Trainer does not exist or is not open
+Trainer 0 closed. Salary 270NIS
+Trainer 3 closed. Salary 70NIS
