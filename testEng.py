@@ -45,23 +45,26 @@ usage = usageSeparator + "\n\033[1;32mUsage: './" + scriptName + "'\n\n[*]\033[0
 
 if "-u" in sys.argv or\
 	"--usage" in sys.argv:
-
+	
 	print(usage)
 	exit()
 
 if not os.path.isdir(scenariosPath):
+	print()
 	print("\033[1;31m[!]", scenariosPath, "dir wasn't found.\033[0m")
 
 	print(usage)
 	exit()
 
 if not os.path.isfile(binFilePath):
+	print()
 	print("\033[1;31m[!]", binFilePath, "file wasn't found.\033[0m")
 
 	print(usage)
 	exit()
 
 if not os.path.isfile(configFilePath):
+	print()
 	print("\033[1;31m[!]", configFilePath, "file wasn't found.\033[0m")
 
 	print(usage)
@@ -90,7 +93,7 @@ for file in os.listdir(scenariosPath):
 
 				if 	p.returncode is not 0 or\
 					containedErrors:
-					
+
 					print("\033[1;31m[!]\033[0m valgrind check for {file} \033[1;31mFAILED\033[0m (exitcode: {returnCode}; {errorSummary})"\
 						.format(file=file, returnCode=p.returncode, errorSummary=valgrindOutput.rsplit("==")[-1].rstrip("\n").lstrip(' ')))
 				else:
