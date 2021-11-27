@@ -106,7 +106,7 @@ for file in os.listdir(scenariosPath):
 			if expectedOutput != occuredOutput:
 				outputFile = outputsPath + "/" + file.replace(sceneFileExtension, failedOutputExtension)
 				print("\033[1;31m[!]\033[0m output check for {file} \033[1;31mFAILED\033[0m (see: {outputFile})"\
-					.format(file=file, outputFile=outputFile))
+					.format(file=file, outputFile=os.path.abspath(outputFile)))
 				
 				with open(outputFile, "w") as f:
 					f.write(difflib.HtmlDiff().make_file(expectedOutput.split("\n"), occuredOutput.split("\n"), 'EXPECTED', 'OCCURED'))
