@@ -91,7 +91,7 @@ for file in os.listdir(scenariosPath):
 				containedErrors = "ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)" not in valgrindOutput or\
 									"All heap blocks were freed -- no leaks are possible" not in valgrindOutput
 
-				if 	p.returncode is not 0 or\
+				if 	p.returncode != 0 or\
 					containedErrors:
 
 					print("\033[1;31m[!]\033[0m valgrind check for {file} \033[1;31mFAILED\033[0m (exitcode: {returnCode}; {errorSummary})"\
